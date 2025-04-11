@@ -1,0 +1,137 @@
+/* Global Styles */
+:root {
+    --primary-color: #2874f0;
+    --secondary-color: #fb641b;
+    --text-color: #212121;
+    --light-gray: #f1f3f6;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-color) !important;
+}
+
+/* Navigation Styles */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar .nav-link {
+    color: var(--text-color) !important;
+    font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color), #1a237e);
+    color: white;
+    padding: 4rem 0;
+}
+
+.hero-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Product Cards */
+.product-card .card-body {
+    padding: 1rem;
+}
+
+.product-card .card-title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-card .price {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #1a237e;
+    border-color: #1a237e;
+}
+
+.btn-outline-danger {
+    border-color: #ff6161;
+    color: #ff6161;
+}
+
+.btn-outline-danger:hover {
+    background-color: #ff6161;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #172337 !important;
+}
+
+footer h5 {
+    color: #878787;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--primary-color);
+}
+
+.social-links a {
+    font-size: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+    }
+    
+    .hero-section h2 {
+        font-size: 2rem;
+    }
+    
+    .card-img-top {
+        height: 150px;
+    }
+} 
